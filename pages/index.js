@@ -15,8 +15,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Reeventy <a href="https://nextjs.org">Next.js!</a><br/> UI Library Benchmark
+          Welcome to Reeventy <a href="https://nextjs.org">Next.js!</a><br /> UI Library Benchmark
         </h1>
+        <a href='https://github.com/Extremix/Nextjs-UI-Library-Benchmark'>https://github.com/Extremix/Nextjs-UI-Library-Benchmark</a>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -42,33 +43,39 @@ export default function Home() {
         </ul> */}
 
         <div className={styles.grid}>
-          <a href="/chakra" className={styles.card}>
+        <Link href="/chakra">
+          <a className={styles.card}>
             <h2>Chakra UI &rarr;</h2>
             <p>Benchmark</p>
           </a>
+          </Link>
 
-          <a href="/nextui" className={styles.card}>
+          <Link href="/nextui">
+          <a className={styles.card}>
             <h2>NextUI &rarr;</h2>
             <p>Benchmark</p>
           </a>
+          </Link>
 
+          <Link href="/primereact">
           <a
-            href="/primereact"
+          
             className={styles.card}
           >
             <h2>PrimeReact &rarr;</h2>
             <p>Benchmark</p>
           </a>
+          </Link>
 
-          <a
-            href="/mantine"
+          <Link href="/mantine"><a
             className={styles.card}
           >
             <h2>Mantine &rarr;</h2>
             <p>
-            Benchmark
+              Benchmark
             </p>
           </a>
+          </Link>
         </div>
       </main>
 
