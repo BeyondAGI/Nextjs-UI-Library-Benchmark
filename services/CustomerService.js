@@ -1,4 +1,4 @@
-import { customersLarge } from "../../customers-large";
+import { customersLarge } from "../customers-large";
 
 
 export class CustomerService {

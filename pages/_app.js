@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Layout from './components/layout'
+import Layout from '../components/layout'
 import { NextUIProvider } from '@nextui-org/react'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 

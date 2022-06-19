@@ -3,11 +3,11 @@ import { Grid } from "@nextui-org/react"
 import { Text } from "@nextui-org/react"
 import { Link } from "@nextui-org/react"
 import { Table, Row, Col, Tooltip, User } from "@nextui-org/react";
-import { DeleteIcon } from "./components/TableItems/DeleteIcon";
-import { EditIcon } from "./components/TableItems/EditIcon";
-import { EyeIcon } from "./components/TableItems/EyeIcon";
-import { IconButton } from "./components/TableItems/IconButton";
-import { StyledBadge } from "./components/TableItems/StyledBadge";
+import { DeleteIcon } from "../components/TableItems/DeleteIcon";
+import { EditIcon } from "../components/TableItems/EditIcon";
+import { EyeIcon } from "../components/TableItems/EyeIcon";
+import { IconButton } from "../components/TableItems/IconButton";
+import { StyledBadge } from "../components/TableItems/StyledBadge";
 
 function NextUIBenchmark() {
     const columns = [

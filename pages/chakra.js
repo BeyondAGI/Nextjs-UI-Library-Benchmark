@@ -1,7 +1,7 @@
 import { StarIcon } from "@chakra-ui/icons"
 import { Avatar, Badge, Box, Grid, GridItem, Image, SimpleGrid, VStack, Wrap, WrapItem } from "@chakra-ui/react"
 import { Container } from "@nextui-org/react"
-import ComplexTable from "./components/ComplexTable"
+import ComplexTable from "../components/ComplexTable"
 
 function ChakraBenchmark() {
     const property = {
