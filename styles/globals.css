@@ -1018,3 +1018,7 @@ img.flag {
 .flag-zw {
   background-position: 0 100%
 }
+
+.p-progressbar { 
+  height: 0.5rem !important;
+}

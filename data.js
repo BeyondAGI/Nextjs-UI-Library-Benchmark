@@ -13,5 +13,9 @@ export const navLinks = [
     {
       name: "PrimeReact UI Library",
       path: "/primereact",
+    },
+    {
+      name: "Mantine UI Library",
+      path: "/mantine",
     }
   ];

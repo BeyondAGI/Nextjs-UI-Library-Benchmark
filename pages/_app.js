@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Layout from '../components/layout'
 import { NextUIProvider } from '@nextui-org/react'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { MantineProvider } from '@mantine/core';
 
 function MyApp({ Component, pageProps }) {
 
@@ -17,13 +18,22 @@ function MyApp({ Component, pageProps }) {
   const theme = extendTheme({ colors })
 
   return (
-    <ChakraProvider theme={theme}>
-      <NextUIProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </NextUIProvider>
-    </ChakraProvider>
+    <MantineProvider
+      withGlobalStyles
+      withNormalizeCSS
+      theme={{
+        /** Put your mantine theme override here */
+        colorScheme: 'light',
+      }}
+    >
+      <ChakraProvider theme={theme}>
+        <NextUIProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </NextUIProvider>
+      </ChakraProvider>
+    </MantineProvider>
   )
 }
 

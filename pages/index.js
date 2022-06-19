@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Reeventy <a href="https://nextjs.org">Next.js!</a> UI Library Benchmark
+          Welcome to Reeventy <a href="https://nextjs.org">Next.js!</a><br/> UI Library Benchmark
         </h1>
 
         <p className={styles.description}>
@@ -42,31 +42,31 @@ export default function Home() {
         </ul> */}
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/chakra" className={styles.card}>
+            <h2>Chakra UI &rarr;</h2>
+            <p>Benchmark</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/nextui" className={styles.card}>
+            <h2>NextUI &rarr;</h2>
+            <p>Benchmark</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/primereact"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>PrimeReact &rarr;</h2>
+            <p>Benchmark</p>
+          </a>
+
+          <a
+            href="/mantine"
+            className={styles.card}
+          >
+            <h2>Mantine &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            Benchmark
             </p>
           </a>
         </div>

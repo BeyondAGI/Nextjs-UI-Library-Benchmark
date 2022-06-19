@@ -214,9 +214,9 @@ function PrimeReactBenchmark() {
     }
 
     return (
-        <div className="surface-0 text-center">
+        <div className="surface-0 text-center ">
 
-            <div className="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+            <div className="shadow-6 bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
                 <div className="font-bold mr-8">🔥 Hot Deals!</div>
                 <div className="align-items-center hidden lg:flex">
                     <span className="line-height-3">Libero voluptatum atque exercitationem praesentium provident odit.</span>
@@ -296,10 +296,10 @@ function PrimeReactBenchmark() {
                     </div>
                 </div>
             </div>
-            <div className="grid">
-                <div className="p-4 h-full datatable-doc-demo">
-                    <div className="card">
-                        <DataTable value={customers} paginator className="p-datatable-customers" header={header} rows={10}
+            <div className="grid justify-content-center">
+                <div className="p-4 h-full datatable-doc-demo shadow-8  ">
+                    <div className="card ">
+                        <DataTable size="small" value={customers} paginator className="p-datatable-customers" header={header} rows={10}
                             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[10, 25, 50]}
                             dataKey="id" rowHover selection={selectedCustomers} onSelectionChange={e => setSelectedCustomers(e.value)}
                             filters={filters} filterDisplay="menu" loading={loading} responsiveLayout="scroll"
@@ -314,7 +314,7 @@ function PrimeReactBenchmark() {
                                 filter filterElement={dateFilterTemplate} />
                             <Column field="balance" header="Balance" sortable dataType="numeric" style={{ minWidth: '8rem' }} body={balanceBodyTemplate} filter filterElement={balanceFilterTemplate} />
                             <Column field="status" header="Status" sortable filterMenuStyle={{ width: '14rem' }} style={{ minWidth: '10rem' }} body={statusBodyTemplate} filter filterElement={statusFilterTemplate} />
-                            <Column field="activity" header="Activity" sortable showFilterMatchModes={false} style={{ minWidth: '10rem' }} body={activityBodyTemplate} filter filterElement={activityFilterTemplate} />
+                            <Column field="activity" header="Activity" sortable showFilterMatchModes={false} style={{ minWidth: '5rem' }} body={activityBodyTemplate} filter filterElement={activityFilterTemplate} />
                             <Column headerStyle={{ width: '4rem', textAlign: 'center' }} bodyStyle={{ textAlign: 'center', overflow: 'visible' }} body={actionBodyTemplate} />
                         </DataTable>
                     </div>
